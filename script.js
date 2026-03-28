@@ -37,3 +37,33 @@ form.addEventListener('submit', (e) => {
     saveAndRender();
     form.reset();
 });
+
+// Validation Function
+function validateInputs(name, id, email, contact) {
+    const nameRegex = /^[A-Za-z\s]+$/;
+    const idRegex = /^\d+$/;
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    const contactRegex = /^\d{10,}$/;
+
+    if (!name || !id || !email || !contact) {
+        alert("All fields are required!");
+        return false;
+    }
+    if (!nameRegex.test(name)) {
+        alert("Student Name should only contain characters.");
+        return false;
+    }
+    if (!idRegex.test(id)) {
+        alert("Student ID should only contain numbers.");
+        return false;
+    }
+    if (!emailRegex.test(email)) {
+        alert("Please enter a valid email address.");
+        return false;
+    }
+    if (!contactRegex.test(contact)) {
+        alert("Contact Number must be at least 10 digits and only numbers.");
+        return false;
+    }
+    return true;
+}
