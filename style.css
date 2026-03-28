@@ -151,3 +151,33 @@ th {
     font-size: 0.8rem; 
     width: auto;
 }
+
+/* Media Queries */
+
+/* Desktop (Default) */
+
+/* Tablet (641px - 1024px) */
+@media (max-width: 1024px) {
+    .container {
+        flex-direction: column;
+    }
+}
+
+/* Mobile (≤ 640px) */
+@media (max-width: 640px) {
+    body {
+        padding: 10px;
+    }
+    header h1 {
+        font-size: 1.8rem;
+    }
+    .display-section {
+        padding: 10px;
+    }
+    table {
+        font-size: 0.85rem;
+    }
+    th, td {
+        padding: 8px 5px;
+    }
+}
