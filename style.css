@@ -39,7 +39,7 @@ header h1 {
     box-shadow: 0 10px 30px rgba(0,0,0,0.1);
 }
 
-/* Form Styling */
+/* Form Section */
 .form-section {
     flex: 1;
     background: white;
@@ -109,7 +109,7 @@ button:hover {
     width: 100%;
 }
 
-/* Dynamic Scrollbar Class */
+/* Dynamic Scrollbar */
 .scroll-enabled {
     max-height: 400px;
     overflow-y: scroll;
