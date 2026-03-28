@@ -67,3 +67,36 @@ function validateInputs(name, id, email, contact) {
     }
     return true;
 }
+
+// Render Table Rows
+function renderStudents() {
+    studentDataContainer.innerHTML = '';
+
+    students.forEach((student, index) => {
+        const row = document.createElement('tr');
+        row.innerHTML = `
+            <td>${student.name}</td>
+            <td>${student.id}</td>
+            <td>${student.email}</td>
+            <td>${student.contact}</td>
+            <td class="action-btns">
+                <button class="edit-btn" onclick="editStudent(${index})">Edit</button>
+                <button class="delete-btn" onclick="deleteStudent(${index})">Delete</button>
+            </td>
+        `;
+        studentDataContainer.appendChild(row);
+    });
+
+    handleDynamicScrollbar();
+}
+
+// Dynamic Scrollbar logic
+function handleDynamicScrollbar() {
+    // If table rows exceed 5, enable vertical scrollbar
+    if (students.length > 5) {
+        tableWrapper.classList.add('scroll-enabled');
+    } else {
+        tableWrapper.classList.remove('scroll-enabled');
+    }
+}
+
