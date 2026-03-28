@@ -13,6 +13,32 @@
         <p> A simple and efficient way to register, manage, edit and track student records in one place. </p>
     </header>
 
+    <main class="container">
+        <!-- Registration Form Section -->
+        <section class="form-section">
+            <h2> Add New Student </h2>
+            <form id="registrationForm">
+                <div class="input-group">
+                    <label for="studentName"> Student Name </label>
+                    <input type="text" id="studentName" placeholder="Enter full name" required>
+                </div>
+                <div class="input-group">
+                    <label for="studentID"> Student ID </label>
+                    <input type="text" id="studentID" placeholder="Enter ID number" required>
+                </div>
+                <div class="input-group">
+                    <label for="emailID"> Email ID </label>
+                    <input type="email" id="emailID" placeholder="example@mail.com" required>
+                </div>
+                <div class="input-group">
+                    <label for="contactNo"> Contact No. </label>
+                    <input type="tel" id="contactNo" placeholder="Enter 10-digit number" required>
+                </div>
+                <button type="submit" id="submitBtn"> Register Student </button>
+            </form>
+        </section>
+
+
     <script src="./script.js"></script>
 </body>
 </html>
