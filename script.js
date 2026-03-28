@@ -90,6 +90,32 @@ function renderStudents() {
     handleDynamicScrollbar();
 }
 
+// Edit functionality
+window.editStudent = function(index) {
+    const student = students[index];
+    document.getElementById('studentName').value = student.name;
+    document.getElementById('studentID').value = student.id;
+    document.getElementById('emailID').value = student.email;
+    document.getElementById('contactNo').value = student.contact;
+
+    editIndex = index;
+    submitBtn.innerText = "Update Record";
+};
+
+// Delete functionality
+window.deleteStudent = function(index) {
+    if (confirm("Are you sure you want to delete this record?")) {
+        students.splice(index, 1);
+        saveAndRender();
+    }
+};
+
+// Data Persistence
+function saveAndRender() {
+    localStorage.setItem('students', JSON.stringify(students));
+    renderStudents();
+}
+
 // Dynamic Scrollbar logic
 function handleDynamicScrollbar() {
     // If table rows exceed 5, enable vertical scrollbar
