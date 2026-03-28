@@ -90,3 +90,64 @@ button {
 button:hover {
     background-color: #34495e;
 }
+
+/* Display Records Section */
+.display-section {
+    flex: 2;
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.display-section h2 {
+    margin-bottom: 20px;
+    color: #444;
+}
+
+.table-wrapper {
+    width: 100%;
+}
+
+/* Dynamic Scrollbar Class */
+.scroll-enabled {
+    max-height: 400px;
+    overflow-y: scroll;
+    border: 1px solid #eee;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    text-align: left;
+    padding: 12px;
+    border-bottom: 1px solid #eee;
+}
+
+th {
+    background-color: #f8f9fa;
+    position: sticky;
+    top: 0;
+}
+
+.action-btns {
+    display: flex;
+    gap: 5px;
+}
+
+.edit-btn { 
+    background-color: #f1c40f; 
+    color: black; padding: 5px 10px; 
+    font-size: 0.8rem; 
+    width: auto;
+}
+
+.delete-btn { 
+    background-color: #e74c3c; 
+    color: white; padding: 5px 10px; 
+    font-size: 0.8rem; 
+    width: auto;
+}
