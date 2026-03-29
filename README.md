@@ -1,10 +1,10 @@
 # Student Registration System
-A fully responsive, web-based Student Registration System built using HTML5, CSS3, and Vanilla JavaScript. This project allows users to register student details, manage records through CRUD operations, and ensures data persistence using Local Storage.
+A fully responsive web-based Student Registration System built using HTML5, CSS3 and Vanilla JavaScript. This project allows users to register student details, manage records through CRUD operations and ensures data persistence using Local Storage.
 
 ## 🚀 Features
 
 ### 1. Registration Form (Task 3)
-    - Captures Student Name, Student ID, Email ID, and Contact Number.
+    - Captures Student Name, Student ID, Email ID and Contact Number.
     - User-friendly layout with clear labels and placeholders.
 ### 2. Records Display (Task 4)
     - A dedicated section to view all registered students in an organized table format.
@@ -28,7 +28,7 @@ A fully responsive, web-based Student Registration System built using HTML5, CSS
 ## 🛠️ Technologies Used
 
 ### HTML5: Semantic structure and form elements.
-### CSS3: Custom styling, Flexbox/Grid, and Media Queries for responsiveness.
+### CSS3: Custom styling, Flexbox and Media Queries for responsiveness.
 ### JavaScript (ES6): DOM manipulation, CRUD logic, Regex validation, and Local Storage API.
 
 ## 📂 Project Structure
@@ -37,18 +37,18 @@ A fully responsive, web-based Student Registration System built using HTML5, CSS
     │
     ├── index.html    # Main structure and layout
     ├── style.css     # Styling and responsive media queries
-    ├── script.js    # Logic, validation, and data management
+    ├── script.js     # Logic, validation and data management
     └── README.md     # Project documentation
 
 ### 📝 How to Run
     - Clone or download the project files.
-    - Ensure index.html, style.css, and script.js are in the same directory.
+    - Ensure index.html, style.css and script.js are in the same directory.
     - Open index.html in any modern web browser (Chrome, Firefox, Edge).
 
 ## 📌 Implementation Details (Assignment Specifics)
     - Meta tags and descriptive headers are included for SEO and clarity.
     - Code is thoroughly commented to explain complex logic like the Regex validation and the dynamic scrollbar implementation.
-    - GitHub Best Practices: This project is structured to support separate commits for HTML, CSS, JS, and README to meet the evaluation requirements.
+    - GitHub Best Practices: This project is structured to support separate commits for HTML, CSS, JS and README to meet the evaluation requirements.
     - Github Link: [https://github.com/PrashantK131/Assignment-1_Student-Registration-System]
 
 ## 👨‍💻 Author
